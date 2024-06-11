@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "93f8e37d-aebb-43ea-9bc5-0d6ecddb2e28",
+		"name": "Otavio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Criar usuário",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"teste123\", \"email\": \"teste-otavi1o2143\", \"password\": \"chiclete\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\": \"teste-otavi1o2143\", \"password\": \"chiclete\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/users/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlLW90YXZpMW8yMTQzIiwiaWQiOjMsImlhdCI6MTcxODAyNDUxMX0.qlYU0SqLHR8hY0aAChgcx_6HdBQHSGaC6Gg5qBrxJE0",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\": \"teste-otavio\", \"content\": \"teste\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar posts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlLW90YXZpMW8yMTQzIiwiaWQiOjMsImlhdCI6MTcxODAzMjg4MH0.Eszv1nylFxhflRL7k7dn9c8RmwHJpAcaktorioZ5Obo",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar comentário",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlLW90YXZpMW8yMTQzIiwiaWQiOjMsImlhdCI6MTcxODAzMjg4MH0.Eszv1nylFxhflRL7k7dn9c8RmwHJpAcaktorioZ5Obo",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"teste-otavio1\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/posts/1/comments",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts",
+						"1",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar comentários",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlLW90YXZpMW8yMTQzIiwiaWQiOjMsImlhdCI6MTcxODAzMjg4MH0.Eszv1nylFxhflRL7k7dn9c8RmwHJpAcaktorioZ5Obo",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/posts/1/comments",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts",
+						"1",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
